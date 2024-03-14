@@ -20,3 +20,66 @@ h1,h2,h3{
   color: $darkBlue;
 }
 
+h1{
+  font-size: 37px;
+}
+
+h2{
+  font-size: 30px;
+}
+
+p{
+  line-height: 1.5;
+  margin-bottom: 36px;
+}
+
+.container{
+  max-width: 1110px;
+  margin: 0 auto;
+
+  &--pall{
+    padding: 70px 24px;
+  }
+
+  &--py{
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &--px{
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  &--pr{
+    padding-right: 24px;
+  }
+
+  &--pl{
+    padding-left: 24px;
+  }
+
+  &--pb{
+    padding-bottom: 70px;
+  }
+
+
+
+}
+
+.flex{
+  display: flex;
+  &-js-sb{
+    justify-content: space-between;
+  }
+
+  &-jc-c{
+    justify-content: center;
+  }
+
+  &-ai-c{
+    align-items: center;
+  }
+
+
+}
