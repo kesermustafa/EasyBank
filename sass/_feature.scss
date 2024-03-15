@@ -1,12 +1,17 @@
 .feature {
   background-color: $lightGrayishBlue;
   text-align: center;
+  width: 100%;
   @include breakpoint-up(large) {
-   text-align: left;
+    text-align: left;
   }
 
   &__intro {
     margin-bottom: 55px;
+
+    p {
+      color: $grayishBlue;
+    }
 
     @include breakpoint-up(large) {
       width: 60%;
@@ -47,6 +52,7 @@
     color: $darkBlue;
     margin-bottom: 16px;
     line-height: 1.15;
+    font-weight: 400;
     @include breakpoint-up(large) {
       font-size: 24px;
       margin-bottom: 24px;
@@ -56,5 +62,6 @@
   &__description {
     font-size: 14px;
     line-height: 1.8;
+    color: $grayishBlue;
   }
 }

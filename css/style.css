@@ -24,7 +24,14 @@ h1 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 32px;
+  margin-bottom: 32px;
+}
+@media screen and (min-width: 64em) {
+  h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
 }
 
 p {
@@ -148,6 +155,7 @@ button:hover, .button:hover {
 }
 .hero {
   background-color: hsl(0, 0%, 98%);
+  padding-bottom: 50px;
 }
 @media screen and (min-width: 64em) {
   .hero .container {
@@ -223,6 +231,7 @@ button:hover, .button:hover {
 .feature {
   background-color: hsl(220, 16%, 96%);
   text-align: center;
+  width: 100%;
 }
 @media screen and (min-width: 64em) {
   .feature {
@@ -231,6 +240,9 @@ button:hover, .button:hover {
 }
 .feature__intro {
   margin-bottom: 55px;
+}
+.feature__intro p {
+  color: hsl(233, 8%, 62%);
 }
 @media screen and (min-width: 64em) {
   .feature__intro {
@@ -269,6 +281,7 @@ button:hover, .button:hover {
   color: hsl(233, 26%, 24%);
   margin-bottom: 16px;
   line-height: 1.15;
+  font-weight: 400;
 }
 @media screen and (min-width: 64em) {
   .feature__title {
@@ -279,4 +292,58 @@ button:hover, .button:hover {
 .feature__description {
   font-size: 14px;
   line-height: 1.8;
+  color: hsl(233, 8%, 62%);
+}
+
+.articles {
+  background-color: hsl(0, 0%, 98%);
+}
+.articles .article__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+@media screen and (min-width: 40em) {
+  .articles .article__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (min-width: 64em) {
+  .articles .article__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.articles .article__item {
+  background-color: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.articles .article__item:hover {
+  transform: scale(1.05);
+}
+.articles .article__image {
+  height: 250px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.articles .article__text {
+  padding: 20px 24px 40px 20px;
+}
+.articles .article__author {
+  font-size: 10px;
+  color: hsl(233, 8%, 62%);
+  margin-bottom: 10px;
+}
+.articles .article__title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: black;
+  line-height: 1.5;
+}
+.articles .article__description {
+  font-size: 13px;
+  color: hsl(233, 8%, 62%);
 }
