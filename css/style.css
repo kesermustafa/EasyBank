@@ -347,3 +347,76 @@ button:hover, .button:hover {
   font-size: 13px;
   color: hsl(233, 8%, 62%);
 }
+
+.footer {
+  background-color: hsl(233, 26%, 24%);
+  color: white;
+  padding: 40px;
+  text-align: center;
+}
+@media screen and (max-width: 400px) {
+  .footer .container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer .container {
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 4fr;
+    grid-template-areas: "logo links1 links2 cta" "social links1 links2 copyright";
+    justify-items: center;
+  }
+}
+.footer a {
+  color: white;
+}
+.footer__logo {
+  display: inline-block;
+}
+@media screen and (min-width: 64em) {
+  .footer__logo {
+    grid-area: logo;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer__social {
+    margin-top: 10px;
+    grid-area: social;
+  }
+}
+.footer__links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media screen and (min-width: 64em) {
+  .footer__links {
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer__links.col1 {
+    grid-area: links1;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer__links.col2 {
+    grid-area: links2;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer__cta {
+    align-self: end;
+    margin-bottom: 10px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .footer__copyright {
+    margin-top: 20px;
+    align-self: end;
+    grid-area: copyright;
+  }
+}
