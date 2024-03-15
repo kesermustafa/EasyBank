@@ -70,6 +70,22 @@ p {
   align-items: center;
 }
 
+button, .button {
+  display: inline-block;
+  white-space: nowrap;
+  background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+  padding: 15px 35px;
+  border-radius: 50px;
+  color: white;
+  font-weight: 400;
+  font-size: 0.875rem;
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+button:hover, .button:hover {
+  opacity: 0.7;
+}
+
 .header {
   position: relative;
 }
@@ -80,13 +96,20 @@ p {
 }
 .header__logo img {
   width: 150px;
+  height: 18px;
 }
-.header__links a {
+.header__menu {
+  width: calc(100% - 100px);
+  margin-left: 20%;
+}
+.header__menu a {
   position: relative;
   font-size: 0.875rem;
   color: hsl(233, 8%, 62%);
+  letter-spacing: 1.2px;
+  margin-right: 32px;
 }
-.header__links a::before {
+.header__menu a::before {
   content: "";
   display: block;
   position: absolute;
@@ -99,10 +122,56 @@ p {
   transition: all 0.5s ease;
   border-radius: 15px;
 }
-.header__links a:hover {
+.header__menu a:hover {
   color: hsl(233, 26%, 24%);
   transition: all 0.5s ease;
 }
-.header__links a:hover::before {
+.header__menu a:hover::before {
   width: 100%;
+}
+.header .menuBtn {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .header__menu {
+    display: none;
+  }
+  .header a.button {
+    display: none;
+  }
+  .header .menuBtn {
+    display: inline-block;
+    font-size: 24px;
+    margin-right: 20px;
+  }
+}
+.hero {
+  background-color: hsl(0, 0%, 98%);
+}
+@media screen and (min-width: 64em) {
+  .hero .container {
+    display: flex;
+    align-items: center;
+  }
+}
+.hero__image {
+  position: relative;
+  background-image: url("./../images/bg-intro-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 280px;
+}
+@media screen and (min-width: 40em) {
+  .hero__image {
+    min-height: 400px;
+  }
+}
+@media screen and (min-width: 64em) {
+  .hero__image {
+    flex: 3;
+    height: 656px;
+    order: 2;
+  }
 }

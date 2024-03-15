@@ -10,16 +10,19 @@
   &__logo{
     img{
       width: 150px;
+      height: 18px;
     }
   }
 
-  &__links{
-
+  &__menu{
+    width: calc(100% - 100px);
+    margin-left: 20%;
     a{
       position: relative;
       font-size: $font-sm;
       color: $grayishBlue;
-
+      letter-spacing: 1.2px;
+      margin-right: 32px;
 
       &::before{
         content: "";
@@ -45,4 +48,24 @@
     }
   }
 
+  .menuBtn{
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1000px){
+    .header{
+        &__menu{
+          display: none;
+        }
+
+      a.button{
+        display: none;
+      }
+      .menuBtn{
+        display: inline-block;
+        font-size: 24px;
+        margin-right: 20px;
+      }
+    }
 }
