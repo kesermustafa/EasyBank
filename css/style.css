@@ -219,3 +219,64 @@ button:hover, .button:hover {
     text-align: left;
   }
 }
+
+.feature {
+  background-color: hsl(220, 16%, 96%);
+  text-align: center;
+}
+@media screen and (min-width: 64em) {
+  .feature {
+    text-align: left;
+  }
+}
+.feature__intro {
+  margin-bottom: 55px;
+}
+@media screen and (min-width: 64em) {
+  .feature__intro {
+    width: 60%;
+  }
+}
+@media screen and (min-width: 40em) {
+  .feature__grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+.feature__item {
+  padding: 15px;
+}
+@media screen and (min-width: 40em) {
+  .feature__item {
+    flex: 0 0 50%;
+  }
+}
+@media screen and (min-width: 64em) {
+  .feature__item {
+    flex: 1;
+  }
+}
+.feature__icon {
+  margin-bottom: 28px;
+}
+@media screen and (min-width: 64em) {
+  .feature__icon {
+    margin-bottom: 40px;
+  }
+}
+.feature__title {
+  font-size: 20px;
+  color: hsl(233, 26%, 24%);
+  margin-bottom: 16px;
+  line-height: 1.15;
+}
+@media screen and (min-width: 64em) {
+  .feature__title {
+    font-size: 24px;
+    margin-bottom: 24px;
+  }
+}
+.feature__description {
+  font-size: 14px;
+  line-height: 1.8;
+}

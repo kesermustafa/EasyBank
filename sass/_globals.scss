@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -8,79 +8,80 @@
   list-style: none;
 }
 
-body{
+body {
   font-family: "Public Sans", sans-serif;
   font-weight: 300;
   overflow-x: hidden;
 }
 
-h1,h2,h3{
+h1, h2, h3 {
   line-height: 1.2;
   letter-spacing: 1.2px;
   color: $darkBlue;
 }
 
-h1{
+h1 {
   font-size: 37px;
 }
 
-h2{
+h2 {
   font-size: 30px;
 }
 
-p{
+p {
   line-height: 1.5;
   margin-bottom: 36px;
 }
 
-.container{
+.container {
   max-width: 1110px;
   margin: 0 auto;
 
-  &--pall{
+  &--pall {
     padding: 70px 24px;
   }
 
-  &--py{
+  &--py {
     padding-top: 70px;
     padding-bottom: 70px;
   }
 
-  &--px{
+  &--px {
     padding-left: 24px;
     padding-right: 24px;
   }
 
-  &--pr{
+  &--pr {
     padding-right: 24px;
   }
 
-  &--pl{
+  &--pl {
     padding-left: 24px;
   }
 
-  &--pb{
+  &--pb {
     padding-bottom: 70px;
   }
 }
 
-.flex{
+.flex {
   display: flex;
-  &-js-sb{
+
+  &-js-sb {
     justify-content: space-between;
   }
 
-  &-jc-c{
+  &-jc-c {
     justify-content: center;
   }
 
-  &-ai-c{
+  &-ai-c {
     align-items: center;
   }
 }
 
 
-button, .button{
+button, .button {
   display: inline-block;
   white-space: nowrap;
   background-image: linear-gradient(to right, $limeGreen, $brightCyan);
@@ -91,7 +92,8 @@ button, .button{
   font-size: $font-sm;
   opacity: 1;
   transition: all 0.5s ease;
-  &:hover{
+
+  &:hover {
     opacity: 0.7;
   }
 }
